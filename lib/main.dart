@@ -3,6 +3,7 @@ import 'package:grocery_app_week2/core/utils/themes.dart';
 import 'package:grocery_app_week2/features/auth/location_screen.dart';
 import 'package:grocery_app_week2/features/auth/login_screen.dart';
 import 'package:grocery_app_week2/features/auth/signup_screen.dart';
+import 'package:grocery_app_week2/features/auth/welcome_screen.dart';
 import 'package:grocery_app_week2/features/home/pages/find_products.dart';
 import 'package:grocery_app_week2/features/home/pages/home_screen.dart';
 import 'package:grocery_app_week2/features/home/pages/main_screen.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'nectar',
       theme: AppThemes.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: MainScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

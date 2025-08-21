@@ -1,4 +1,7 @@
 class AppAssets {
+  // Onborading
+
+  static const String onboardingPNG = 'assets/images/onboarding_image.png';
   static const String splashSVG = 'assets/images/nectar_splash.svg';
   static const String carrotLogoSVG = 'assets/icons/carrot_logo.svg';
   static const String locationSVG = 'assets/images/Location.svg';

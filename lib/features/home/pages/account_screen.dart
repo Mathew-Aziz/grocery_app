@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:grocery_app_week2/core/constants/app_assets.dart';
 import 'package:grocery_app_week2/core/widgets/custom_text_widget.dart';
 
+import '../../../core/utils/colors.dart';
 import '../widgets/account_ui.dart';
 
 class AccountScreen extends StatelessWidget {
@@ -12,6 +13,39 @@ class AccountScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(bottom: 65),
+        child: SizedBox(
+          width: 360,
+          height: 65,
+          child: FloatingActionButton(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            backgroundColor: AppColors.greyUnderline,
+            // 👈 move it up
+            onPressed: () {},
+            child: Padding(
+              padding: const EdgeInsets.all(20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Icon(Icons.logout, color: AppColors.mainColor),
+                  SizedBox(width: 110),
+                  Text(
+                    "Log Out",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.mainColor,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
       appBar: AppBar(
         centerTitle: true,
         toolbarHeight: 100,
