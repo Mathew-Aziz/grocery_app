@@ -1,3 +1,4 @@
+ HEAD
 # grocery_app_week2
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# grocery_app
+Week 2 grocery app for DEPI training
+ 8389f6211131a8d93166ee63e2026385a3d3bbb2
