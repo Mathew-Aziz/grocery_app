@@ -7,9 +7,11 @@ class FloatingMainButton extends StatelessWidget {
     super.key,
     required this.buttonText,
     required this.isCart,
+    required this.onPressed,
   });
   final String buttonText;
   final bool isCart;
+  final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -17,7 +19,7 @@ class FloatingMainButton extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       backgroundColor: AppColors.mainColor,
       // 👈 move it up
-      onPressed: () {},
+      onPressed: onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

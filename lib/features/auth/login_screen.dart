@@ -6,6 +6,7 @@ import 'package:grocery_app_week2/core/utils/colors.dart';
 import 'package:grocery_app_week2/core/widgets/custom_textFormField.dart';
 import 'package:grocery_app_week2/features/auth/widgets/auth_text_header.dart';
 import 'package:grocery_app_week2/features/auth/signup_screen.dart';
+import 'package:grocery_app_week2/features/home/pages/main_screen.dart';
 
 import '../../core/widgets/main_button.dart';
 import '../home/pages/home_screen.dart';
@@ -61,6 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   SizedBox(height: 30),
                   CustomTextFormField(
+                    obscureText: obscureText,
                     validator: (value) {
                       if (value!.isEmpty) {
                         return "Please enter your password";
@@ -98,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     buttonText: "Log in",
                     onPressed: () {
                       if (formKey.currentState?.validate() ?? false) {
-                        pushReplacementTo(context, HomeScreen());
+                        pushReplacementTo(context, MainScreen());
                       }
                     },
                   ),

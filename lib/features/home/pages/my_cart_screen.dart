@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery_app_week2/features/home/widgets/modal_sheet_u_i.dart';
 import 'package:grocery_app_week2/features/home/widgets/floating_main_button.dart';
 
 import '../../../core/utils/colors.dart';
@@ -18,6 +18,15 @@ class MyCart extends StatelessWidget {
           width: 360,
           height: 65,
           child: FloatingMainButton(
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                isScrollControlled: true,
+                builder: (context) {
+                  return ModalSheetUI();
+                },
+              );
+            },
             buttonText: " Go to Checkout",
             isCart: false,
           ),

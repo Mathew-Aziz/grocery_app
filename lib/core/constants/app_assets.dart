@@ -1,7 +1,12 @@
 class AppAssets {
   // Onborading
 
+  // checkout
+
+  static const String checkoutSuccessSVG = 'assets/images/checkout_success.svg';
+
   static const String onboardingPNG = 'assets/images/onboarding_image.png';
+  // Items
   static const String splashSVG = 'assets/images/nectar_splash.svg';
   static const String carrotLogoSVG = 'assets/icons/carrot_logo.svg';
   static const String locationSVG = 'assets/images/Location.svg';
@@ -48,4 +53,5 @@ class AppAssets {
   static const String helpIcon = 'assets/icons/help_icon.svg';
   static const String aboutIcon = 'assets/icons/about_icon.svg';
   static const String paymentIcon = 'assets/icons/payment_icon.svg';
+  static const String cardIcon = 'assets/icons/card.svg';
 }

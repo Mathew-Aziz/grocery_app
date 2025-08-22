@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       title: 'nectar',
       theme: AppThemes.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: MainScreen(),
+      home: SplashScreen(),
     );
   }
 }

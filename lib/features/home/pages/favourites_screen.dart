@@ -17,6 +17,7 @@ class FavouritesScreen extends StatelessWidget {
           width: 360,
           height: 65,
           child: FloatingMainButton(
+            onPressed: () {},
             buttonText: " Add all to cart",
             isCart: false,
           ),
